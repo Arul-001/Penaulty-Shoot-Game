@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Penaulty shoot</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section id="container">
+      <h1>Penaulty Shoot</h1>
+      <div id="score-board">
+        <div class="card">
+          <img src="./images/portugal-logo.png" alt="Portugal" />
+          <p>Portugal Score</p>
+          <div class="penalties" id="portugal-pen">
+            <span class="penalty"></span>
+            <span class="penalty"></span>
+            <span class="penalty"></span>
+            <span class="penalty"></span>
+            <span class="penalty"></span>
+          </div>
+        </div>
+        <div id="score">
+          <p id="portugal-score">0</p>
+          <p>-</p>
+          <p id="argentina-score">0</p>
+        </div>
+        <div class="card">
+          <img src="./images/argentina-logo.png" alt="Argentina" />
+          <p>Argentina Score</p>
+          <div class="penalties" id="argentina-pen">
+            <span class="penalty"></span>
+            <span class="penalty"></span>
+            <span class="penalty"></span>
+            <span class="penalty"></span>
+            <span class="penalty"></span>
+          </div>
+        </div>
+      </div>
+      <div id="buttons">
+        <button id="try-again" class="button" onclick=start()>Try again</button>
+        <button id="start" class="button" onclick=start()>start</button>
+        <button id="shoot" class="button" onclick=shoot()>shoot</button>
+      </div>
+      <div id="result">
+        <p></p>
+      </div>
+    </section>
+    <script src="./script/main.js"></script>
+  </body>
+</html>
